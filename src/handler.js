@@ -2,7 +2,6 @@ const { nanoid } = require('nanoid')
 const notes = require('./notes')
 
 const addNoteHandler = (request, h) => {
-  console.log('masuk')
   const { title, tags, body } = request.payload
 
   const id = nanoid(16)
